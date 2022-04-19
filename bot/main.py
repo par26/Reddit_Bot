@@ -3,7 +3,7 @@ import time
 import os
 
 
-infoFile = open("../fakeData.txt")
+infoFile = open("../questions.txt")
 data = infoFile.read()
 running = False
 
