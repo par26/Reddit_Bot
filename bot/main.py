@@ -2,7 +2,7 @@ import discord
 import time
 import os
 
-os.system(os.getcwd() + "\main")
+os.startfile(os.getcwd() + "\..\Executable\main")
 print(os.getcwd() + "\..\main")
 infoFile = open("../fakeData.txt")
 data = infoFile.readlines()
@@ -32,4 +32,4 @@ class MyClient(discord.Client):
 
 client = MyClient()
 
-client.run('OTYwNjQ4MTY5ODYyMDk4OTY2.YktfUw.Zb6NolVQsWIAsJXj2OaNmbYqu2w')
+client.run(os.environ.get('TOKEN'))
